@@ -1,0 +1,3 @@
+countif skip wildcard to validate unique value
+
+=IF(LEFT(A1,1)="*", COUNTIF($A:$A, SUBSTITUTE(A1, "*", "~*"))=1, COUNTIF($A:$A, A1)=1)
